@@ -1,0 +1,31 @@
+DOM Traversing
+
+we get HTML Collections by 
+getElementById,  getElementByClassName, getElementByTagName
+
+HTML Collections => html Collections only contains real child html elements.
+                 => HTML Collections updates automatically.
+
+NodeList         => NodeList contains every child real html elements, enters as text, random text as text,
+                         comments as text etc.
+                 => it doenot updates automatically.
+                 
+we get NodeList by
+querySelector, querySelectorAll
+
+.children => gives the real html elements of the parent
+.childNodes => gives all the child in a NodeList
+
+**Works on HTML Collections logic
+children 
+parentElement
+nextElementSibling
+previousElementSibling
+
+
+**Works on NodeList logic
+childNodes  
+parentNode 
+nextSibling
+previousSibling
+
