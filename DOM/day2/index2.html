@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Query Selector</title>
+</head>
+<body>
+        
+        <p class="para">Hello</p>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+
+        <img src="./pexels-riciardus-228095.jpg" alt="" width="400px">
+        <button onclick="changeImg()">Change Image</button>
+
+        <script>
+                let ele = document.querySelectorAll('.para')
+                console.log(ele);
+                ele[0].innerText = 'Namaste'
+                ele[1].style.backgroundColor = 'Blue'
+                ele[1].style.fontSize = '40px'
+                ele[1].style.color = 'White'
+
+                function changeImg() {
+                        let im = document.querySelector('img')
+                        console.log(im);
+                        im.src = './pexels-therato-3408744.jpg'
+                }
+                
+        </script>
+</body>
+</html>
