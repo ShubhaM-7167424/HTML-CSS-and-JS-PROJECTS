@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>clear Timeout</title>
+</head>
+<body>
+        <button id="start-btn">Start Timeout</button>
+        <button id="stop-btn">Stop Timeout</button>
+
+        <script>
+                let timer=null;
+
+                document.getElementById('start-btn').addEventListener('click', ()=>{
+                        timer = setTimeout(() => {
+                               console.log('some task');                               
+                        }, 5000);
+                })
+
+                
+                document.getElementById('stop-btn').addEventListener('click', ()=>{
+                        clearTimeout(timer)
+                })          
+        </script>
+</body>
+</html>
