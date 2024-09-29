@@ -30,3 +30,8 @@ window.addEventListener("scroll", () => {
         document.getElementById("header").style.backgroundColor = "gray";
     }
 });
+
+
+document.getElementById('cs').addEventListener('click',()=>{
+        window.scrollTo({top:800, behavior:'smooth'})
+})
