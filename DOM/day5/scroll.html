@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scroll to a section</title>
+        <link rel="stylesheet" href="./scroll.css">
+</head>
+<body>
+        <div class="header">
+                <ul class="section-list">
+                        <li id="section1-link" onclick="scrollToSection('section1')">section1</li>
+                        <li id="section2-link" onclick="scrollToSection('section2')">section2</li>
+                        <li id="section3-link" onclick="scrollToSection('section3')">section3</li>
+                        <li id="section4-link" onclick="scrollToSection('section4')">section4</li>
+                </ul>
+        </div>
+
+        <div class="section1" id="section1">Section1</div>
+        <div class="section2" id="section2">Section2</div>
+        <div class="section3" id="section3">Section3</div>
+        <div class="section4" id="section4">Section4</div>
+
+        <script src="./scroll.js"></script>
+</body>
+</html>
