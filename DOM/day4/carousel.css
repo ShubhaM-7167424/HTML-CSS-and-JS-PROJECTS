@@ -1,0 +1,36 @@
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+ }
+ .main{
+        width: 100%;
+        height: 450px;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ }
+ .banner{
+        width: 70%;
+        height: 380px;
+        /* background-color: gray; */
+        overflow: hidden;
+ }
+ .carousel{
+        width: 500%;
+        height: 350px;
+        background-color: green;
+        display: flex;
+        /* margin-left: -100%; */
+ }
+ .slide{
+        width: 20%;
+        height: 350px;
+        /* background-color: yellow; */
+        overflow: hidden;
+ }
+ .images{
+        width: 100%;
+        margin-top: -100px;
+ }

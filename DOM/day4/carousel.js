@@ -1,0 +1,15 @@
+let ml = 100;
+
+let slider = setInterval(() => {
+    document.getElementById("carousel").style.transition = "1s";
+    document.getElementById("carousel").style.marginLeft = -ml + "%";
+    ml = ml + 100;
+
+    if (ml > 400) {
+        setTimeout(() => {
+            document.getElementById("carousel").style.transition = "0s";
+            document.getElementById("carousel").style.marginLeft = "0%";
+            ml = 100;
+        }, 1000);
+    }
+}, 3000);
