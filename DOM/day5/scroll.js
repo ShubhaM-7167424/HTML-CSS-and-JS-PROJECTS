@@ -14,8 +14,19 @@
 //         document.getElementById('section1').scrollIntoView({behavior: 'smooth'})
 // })
 
-function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'})
-}
+// function scrollToSection(sectionId) {
+//         document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'})
+// }
 
+// window.addEventListener('scroll', ()=>{
+//         console.log(window.scrollY);
 
+// })
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 200) {
+        document.getElementById("header").style.backgroundColor = "white";
+    } else {
+        document.getElementById("header").style.backgroundColor = "gray";
+    }
+});

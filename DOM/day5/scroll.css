@@ -10,6 +10,7 @@
         background-color: gray;
         position: fixed;
         top: 0;
+        transition: 0.5s;
 }
 .section-list{
         list-style-type: none;
